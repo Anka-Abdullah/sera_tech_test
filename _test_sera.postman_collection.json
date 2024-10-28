@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "0ed11e23-0c6e-4093-875a-730358792b09",
+		"name": "_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14171447",
+		"_collection_link": "https://solar-firefly-21972.postman.co/workspace/Salt~91a4640a-3096-4f01-963b-dd5230c292ca/collection/14171447-0ed11e23-0c6e-4093-875a-730358792b09?action=share&source=collection_link&creator=14171447"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"jol\",\n    \"email\": \"jol@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"jola\",\n    \"email\": \"jol@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "find",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/users/3"
+			},
+			"response": []
+		},
+		{
+			"name": "send email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ankaabdullah.id@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/users/send-email"
+			},
+			"response": []
+		}
+	]
+}
